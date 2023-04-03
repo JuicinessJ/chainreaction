@@ -1,10 +1,5 @@
 import React from 'react'
 
-
-// Responsible for creating the Nav Buttons to re-direct to different pages such as Portfolio, About Me, Projects and etcs.
-// May need to introduce onClicks function inside here for redirect.
-
-
 const Navigation = (props) => {
 
   const { setCurrentPage, currentPage } = props;

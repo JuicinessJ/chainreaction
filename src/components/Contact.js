@@ -41,41 +41,33 @@ function Contact() {
                 setResponse('');
             }
         }
-
-        setResponse('Email not valid.');
-
-
     }
 
 
-
-
-
-
-  return (
-    <div>
-        <h4>Contact</h4>
-        <div class="input-group mb-3 w-25">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+    return (
+        <div>
+            <h4>Contact</h4>
+            <div class="input-group mb-3 w-25">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" name="name" onBlur={validate}></input>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" name="name" onBlur={validate}></input>
-        </div>
-        <div class="input-group mb-3 w-25">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+            <div class="input-group mb-3 w-25">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" name="email" onBlur={validate}></input>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" name="email" onBlur={validate}></input>
-        </div>
-        <div class="input-group mb-3 w-25">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Message</span>
+            <div class="input-group mb-3 w-25">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Message</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" name="message" onBlur={validate}></textarea>
             </div>
-            <textarea class="form-control" aria-label="With textarea" name="message" onBlur={validate}></textarea>
+            <p>{response}</p>
         </div>
-        <p>{response}</p>
-    </div>
-  )
+    )
 }
 
 export default Contact
