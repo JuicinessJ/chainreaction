@@ -4,7 +4,7 @@ import React from 'react'
 /* ToDo:
     - Either make the button inside Navigation to allow them to download my resume or display it here inside a
     img.
-    - Will display a page of profeceines and downloadable link to resume or link
+    - Will display a page of proficients and downloadable link to resume or link
 */
 
 

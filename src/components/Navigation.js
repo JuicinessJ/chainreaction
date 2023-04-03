@@ -34,8 +34,7 @@ const Navigation = (props) => {
       </li>
       <li class="nav-item mx-3">
         <h5>
-          {/* insert link to resume or move this inside about me*/}
-          <a href="http://google.com" className='nav-link'>
+          <a href='#Resume' onClick={() => setCurrentPage('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
             Resume
           </a>
         </h5>

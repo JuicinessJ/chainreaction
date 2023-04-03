@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 /* ToDo:
@@ -8,6 +8,50 @@ import React from 'react'
 */
 
 function Contact() {
+
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+    const [response, setResponse] = useState('');
+
+    const validate = (e) => {
+        const inputType = e.target.name;
+        const inputValue = e.target.value;
+
+        if (inputType === 'name') {
+            if (inputValue.length === 0) {
+                setResponse('Name is not Valid');
+            } else {
+                setResponse ('');
+            }
+        }
+
+        // if (inputType === 'email') {
+        //     if (need to verify if email fits the criteria) {
+                    // setResponse('Email is not valid');
+        //     } else {
+                    // setResponse('');
+        // }
+        // }
+
+        if (inputType === 'message') {
+            if (inputValue.length === 0) {
+                setResponse('There is nothing inside the text box');
+            } else {
+                setResponse('');
+            }
+        }
+
+        setResponse('Email not valid.');
+
+
+    }
+
+
+
+
+
+
   return (
     <div>
         <h4>Contact</h4>
@@ -15,20 +59,21 @@ function Contact() {
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input"></input>
+            <input type="text" class="form-control" aria-label="Sizing example input" name="name" onBlur={validate}></input>
         </div>
         <div class="input-group mb-3 w-25">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input"></input>
+            <input type="text" class="form-control" aria-label="Sizing example input" name="email" onBlur={validate}></input>
         </div>
         <div class="input-group mb-3 w-25">
             <div class="input-group-prepend">
                 <span class="input-group-text">Message</span>
             </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea class="form-control" aria-label="With textarea" name="message" onBlur={validate}></textarea>
         </div>
+        <p>{response}</p>
     </div>
   )
 }
