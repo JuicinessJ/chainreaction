@@ -1,7 +1,9 @@
 import React from 'react'
 
 
-// Will contain either buttons to redirect them to either my github, Linkedin or etc.
+/* ToDo:
+    - Add Linkedin, Github and etc buttons and images
+*/
 
 
 const Footer = () => {

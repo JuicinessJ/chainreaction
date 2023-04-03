@@ -1,7 +1,11 @@
 import React from 'react'
 
 
-// Will display my oast projects
+/* ToDo:
+    - Need to add value inside can either add something inside the onClick to change them into an anchor to
+    redirect them to different projects inside my github
+    - Add two links inside each card to direct to github link and deployed link
+*/
 
 
 const Project = () => {
@@ -9,7 +13,7 @@ const Project = () => {
     <div>
       <h3>My Projects</h3>
       <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">
@@ -18,7 +22,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">
@@ -27,7 +31,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">
@@ -36,7 +40,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">
@@ -45,7 +49,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">
@@ -54,7 +58,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" onClick={() => {}}>
           <div class="card h-100">
             <img></img>
             <div class="card-body">

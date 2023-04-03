@@ -25,6 +25,21 @@ const Navigation = (props) => {
           </a>
         </h5>
       </li>
+      <li class="nav-item mx-3">
+        <h5>
+          <a href='#Contact' onClick={() => setCurrentPage('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+            Contact
+          </a>
+        </h5>
+      </li>
+      <li class="nav-item mx-3">
+        <h5>
+          {/* insert link to resume or move this inside about me*/}
+          <a href="http://google.com" className='nav-link'>
+            Resume
+          </a>
+        </h5>
+      </li>
     </ul>
   );
 }
