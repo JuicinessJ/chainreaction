@@ -8,11 +8,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <h3>Footer</h3>
-      <p>
-        
-      </p>
+    <div class="d-flex justify-content-center">
+        <a href='https://github.com/JuicinessJ'><img src='./images/IMG.4202.JPG'></img></a>
     </div>
   )
 }
