@@ -10,7 +10,7 @@ const AboutMe = () => {
 
   return (
     <div>
-      <img src="..." class="img-thumbnail" alt="..."></img>
+      <img src="./images/IMG_4202.JPG" class="img-thumbnail" alt="picture of me"></img>
       <div class="card">
         <div class="card-header">
           About Me!
