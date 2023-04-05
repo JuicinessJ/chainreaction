@@ -19,11 +19,11 @@ const [ currentPage, setCurrentPage ] = useState('Project') // Defaults page to 
 
 
   return (
-    <div className="App" class="container-fluid">
-      <div>
+    <div className="App">
+      <div id='header'>
         <Header setCurrentPage = {setCurrentPage} currentPage = {currentPage}/>
       </div>
-      <div class="p-5">
+      <div class="p-5" id='content'>
       { currentPage === 'Project'
         ? (
             <Project />
