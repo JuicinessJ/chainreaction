@@ -1,5 +1,10 @@
 import React from 'react'
 
+
+/* ToDo:
+    - Make Responsive
+*/
+
 const Navigation = (props) => {
 
   const { setCurrentPage, currentPage } = props;

@@ -4,7 +4,7 @@ import linkedin from './images/linkedin-icon.png'
 
 
 /* ToDo:
-    - Add Linkedin, Github and etc buttons and images
+    - Make Responsive
 */
 
 

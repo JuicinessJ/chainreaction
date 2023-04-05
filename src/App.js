@@ -8,10 +8,11 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 
-
 /* ToDos:
     - Need to make this responsive for mobile
 */
+
+
 function App() {
 
 

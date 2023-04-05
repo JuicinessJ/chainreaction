@@ -2,11 +2,6 @@ import React from 'react'
 import img from './images/IMG_4202.JPG'
 
 
-/* ToDo:
-    - Add Fluff and Image
-*/
-
-
 const AboutMe = () => {
 
   return (

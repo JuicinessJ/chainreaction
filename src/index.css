@@ -3,3 +3,8 @@ body {
   color: #161B33
 }
 
+@media (max-width: 768px) {
+  #root{
+    color: red;
+  }
+}
