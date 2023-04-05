@@ -12,7 +12,7 @@ const AboutMe = () => {
   return (
     <div class="d-flex">
       <img src={img} class="w-25 rounded-lg border"></img>
-      <div class="card ml-4 rounded-lg">
+      <div class="card ml-4 rounded-lg" id='aboutText'>
         <div class="card-header">
           About Me!
         </div>
