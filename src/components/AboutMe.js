@@ -1,4 +1,5 @@
 import React from 'react'
+import img from './images/IMG_4202.JPG'
 
 
 /* ToDo:
@@ -9,9 +10,9 @@ import React from 'react'
 const AboutMe = () => {
 
   return (
-    <div>
-      <img src="./images/IMG_4202.JPG" class="img-thumbnail" alt="picture of me"></img>
-      <div class="card">
+    <div class="d-flex">
+      <img src={img} class="w-25 rounded-lg border"></img>
+      <div class="card ml-4 rounded-lg">
         <div class="card-header">
           About Me!
         </div>
