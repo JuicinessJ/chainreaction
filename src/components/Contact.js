@@ -20,7 +20,7 @@ function Contact() {
 
         if (inputType === 'name') {
             if (inputValue.length === 0) {
-                setResponse('Name is not Valid');
+                setResponse('Name is not Valid!');
             } else {
                 setResponse ('');
             }
@@ -36,7 +36,7 @@ function Contact() {
 
         if (inputType === 'message') {
             if (inputValue.length === 0) {
-                setResponse('There is nothing inside the text box');
+                setResponse('There is nothing inside the text box!');
             } else {
                 setResponse('');
             }
@@ -65,7 +65,7 @@ function Contact() {
                 </div>
                 <textarea class="form-control" aria-label="With textarea" name="message" onBlur={validate}></textarea>
             </div>
-            <p>{response}</p>
+            <p id='responseText'>{response}</p>
         </div>
     )
 }

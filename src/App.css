@@ -13,3 +13,7 @@
 #aboutText {
   background-color: #E6E8E6;
 }
+
+#responseText {
+  color: red;
+}
